@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5116bf;
+}
+.to-do-list-contenedor {
+    display: flex;
+    margin: 3rem 0 3rem 0;
+    flex-direction: column;
+    gap: 0.65rem;
+    width: 30rem;
+    background-color: #ffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2)
+}
+.agregar-tarea-contenedor {
+    display: flex;
+    background: #ffff;
+    padding: 0.69rem;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.agregar-tarea-contenedor input{
+    border: none;
+}
+
+.agregar-tarea-contenedor input:focus {
+    outline: none;
+}
+
+.button-agregar-resetear {
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #17a8ee;
+    color: #ffff;
+}
+
+#tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    /* padding: 0.69rem; */
+    background-color: #ffff;
+    border-radius: 100px;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.69rem;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.alerta {
+    background-color: rgb(216, 28, 28);
+    color: #fff;
+    padding: 1.2rem;
+    
+}
+
+.borrar-tarea {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border-radius: 80px;
+    background: rgb(224, 23, 23);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-reset-submit input[type="reset"] {
+    background-color: rgb(230, 59, 59);
+}
+
+.sin-tareas {
+    text-align: center;
+    padding: 10px;
+}
+.input-reset-submit {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.error {
+    background-color: rgb(216, 28, 28);
+    color: #fff;
+    padding: 7px;
+}
+
+.contenedor-titulo-fecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+.li-tarea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecha-tarea {
+    
+    display: flex;
+    gap: 1rem;
+
+}

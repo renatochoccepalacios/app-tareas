@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="to-do-list-contenedor">
+        <div class="contenedor-titulo-fecha" id="fecha">
+            <h3>Lista de tareas</h3>
+        </div>
+        <form action="" id="formulario-tarea" class="agregar-tarea-contenedor" autocomplete="off">
+            <input type="text" name="" id="input-tarea" placeholder="Agrega una nueva tarea">
+            <div class="input-reset-submit">
+                <input type="submit" value="Add" id="buttonTarea" class="button-agregar-resetear">
+                <input type="reset" value="Reset" id="buttonResetear" class="button-agregar-resetear"
+                    onclick="btnResetear()">
+            </div>
+        </form>
+        <!-- <li class="error">
+            Este campo es obligatorio
+        </li> -->
+        <ul class="tareas" id="tareas">
+
+            <!-- <li class="tarea">
+                comer
+            </li> -->
+        </ul>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
