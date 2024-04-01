@@ -38,6 +38,7 @@ body {
 
 .agregar-tarea-contenedor input{
     border: none;
+    height: 40px;
 }
 
 .agregar-tarea-contenedor input:focus {
@@ -130,4 +131,21 @@ body {
     display: flex;
     gap: 1rem;
 
+}
+
+@media (max-width: 536px) {
+    .contenedor-titulo-fecha {
+        flex-direction: column;
+    }
+
+    .agregar-tarea-contenedor {
+        justify-content: center;
+    }
+    .agregar-tarea-contenedor input {
+        width: 100%;
+    }
+    
+    .input-reset-submit {
+        width: 100%;
+    }
 }
