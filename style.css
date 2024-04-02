@@ -29,7 +29,6 @@ body {
     display: flex;
     background: #ffff;
     padding: 0.69rem;
-    flex-wrap: wrap;
     gap: 10px;
     border-radius: 10px;
     justify-content: space-between;
@@ -39,6 +38,7 @@ body {
 .agregar-tarea-contenedor input{
     border: none;
     height: 40px;
+    font-size: 17px;
 }
 
 .agregar-tarea-contenedor input:focus {
@@ -88,7 +88,7 @@ body {
     border-radius: 80px;
     background: rgb(224, 23, 23);
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
 }
@@ -104,7 +104,6 @@ body {
 .input-reset-submit {
     display: flex;
     gap: 0.6rem;
-    flex-wrap: wrap;
 }
 
 .error {
@@ -133,19 +132,26 @@ body {
 
 }
 
-@media (max-width: 536px) {
+@media (max-width: 644px) {
     .contenedor-titulo-fecha {
+        text-align: center;
         flex-direction: column;
+
     }
 
     .agregar-tarea-contenedor {
         justify-content: center;
+        flex-direction: column;
+
     }
     .agregar-tarea-contenedor input {
         width: 100%;
+        text-align: center;
     }
     
     .input-reset-submit {
+        flex-direction: column;
+
         width: 100%;
     }
 }
